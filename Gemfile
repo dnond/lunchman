@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.4'
-gem 'sass-rails', '~> 4.0.3'
+gem 'rails', '4.2.5'
+gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -23,13 +23,15 @@ gem 'momentjs-rails', '>= 2.8.1'
 gem 'bootstrap3-datetimepicker-rails', '~> 3.1.1'
 gem 'kaminari'
 
-gem "auto_html"
+gem 'auto_html', '~> 1.6.4'
 
 group :production do
   gem 'mysql2'
 end
 
 group :development do
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
   gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
